@@ -945,7 +945,7 @@
           <pose>0 0 0.25 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ubuntu/koopacar-simulation-assets/models/cone_meshes/cone_mesh.dae</uri>
+              <uri>model://cone_meshes/cone_mesh.dae</uri>
               <scale>0.25 0.25 0.25</scale>
             </mesh>
           </geometry>
@@ -1050,7 +1050,7 @@
           <pose>0 0 0.25 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ubuntu/koopacar-simulation-assets/models/cone_meshes/cone_mesh.dae</uri>
+              <uri>model://cone_meshes/cone_mesh.dae</uri>
               <scale>0.25 0.25 0.25</scale>
             </mesh>
           </geometry>
@@ -1155,7 +1155,7 @@
           <pose>0 0 0.25 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ubuntu/koopacar-simulation-assets/models/cone_meshes/cone_mesh.dae</uri>
+              <uri>model://cone_meshes/cone_mesh.dae</uri>
               <scale>0.25 0.25 0.25</scale>
             </mesh>
           </geometry>
