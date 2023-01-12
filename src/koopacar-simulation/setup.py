@@ -40,8 +40,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-		# cone cluster
-		'cone_cluster = koopacar-simulation.cone_cluster:main'
+		# ros2 node to spawn koopacar with world
+		'koopacar_simulation = koopacar-simulation.koopacar_simulation:main'
         ],
     },
 )
