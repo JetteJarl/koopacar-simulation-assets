@@ -21,6 +21,7 @@ $ sudo pip3 install setuptools \
 $ sudo pip3 install glob2
 
 Now the package can be build using 'colcon build' and the simulation can be run by executing the corresponding node. \
+$ . install/setup.bash \
 $ ros2 launch koopacar_simulation cone_cluster.launch.py
 
 ## How to add additional worlds / simulated environments
