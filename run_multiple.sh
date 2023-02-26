@@ -1,10 +1,11 @@
 #!/bin/bash
 source ~/.bashrc
 
+#TODO: get path to label func as input
+
 # Define variables
 ttl=20
 
-# TODO: Define poses
 num_poses=21
 num_worlds=2
 
@@ -48,6 +49,8 @@ do
     pkill gazebo
     pkill gzserver
     pkill gzclient
+
+    # TODO: Call labeling
   done
 done
 
