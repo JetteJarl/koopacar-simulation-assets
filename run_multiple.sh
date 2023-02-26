@@ -5,7 +5,7 @@ source ~/.bashrc
 ttl=20
 
 # TODO: Define poses
-num_poses=2
+num_poses=21
 num_worlds=2
 
 path_to_worlds="/home/ubuntu/koopacar-simulation-assets/src/koopacar_simulation/koopacar_simulation/worlds/"
@@ -18,7 +18,13 @@ do
   for i in $(seq 0 `expr $num_poses - 1`)
   do
     # Set bot pose
-    python3 change_pose_gazebo.py -f /home/ubuntu/koopacar-simulation-assets/poses.txt -i $i -o koopacar -w "$path_to_worlds${world_files[$w_ind]}"
+    python3 change_pose_gazebo.py -f /home/ubuntu/koopacar-simulation-assets/poses.txt -i $i -o KoopaCar -w "$path_to_worlds${world_files[$w_ind]}"
+
+    if [ $? -ne 0 ];
+    then
+      echo "Error in change_pose_gazebo.py. Evaluate stack trace for more information."
+      exit 1
+    fi
 
     # Install missing dependencies
     rosdep install -i --from-path src --rosdistro foxy -y
