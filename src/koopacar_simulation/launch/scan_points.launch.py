@@ -13,7 +13,7 @@
 # limitations under the License.
 
 """
-Simple simulation for the KoopaCar with some cones.
+Simulation for the KoopaCar with the positions in poses.txt visualized.
 Launches Gazebo and spawns models.
 """
 # A bunch of software packages that are needed to launch ROS2
