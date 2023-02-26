@@ -1,6 +1,6 @@
 import re
-import sys
 import argparse
+import numpy as np
 
 
 def _models_from_sdf(xml_string):
@@ -64,12 +64,6 @@ def main():
 
     args = parser.parse_args()
 
-    # TODO: Clean up
-    # if not args.p and not (args.f and args.i):
-    #    print("Either specify a pose directly using -p or reference a file and an index referencing a pose using -f "
-    #          "and -i.")
-    #    return -1
-
     if args.p and args.f and args.i:
         print("Please use only one of the options. Specify a pose (-p) OR a file and index (-f, -i).")
         return -1
@@ -86,12 +80,17 @@ def main():
         pose_file = open(args.f)
         all_poses = pose_file.readlines()
 
-        pose = all_poses[args.i][0:-1]
-
+        pose = np.fromstring(all_poses[args.i].replace('\n', ''), dtype=float, sep=' ')
         print(pose)
 
-    # TODO: Change simulation
-    # set_pose_in_sdf(args.p, args.o, args.w)
+    elif args.p is not None:
+        pose = np.fromstring(args.p.replace('\n', ''), dtype=float, sep=' ')
+
+    else:
+        print("Please specify a pose either directly or via a file. Use -h for more information.")
+        return -1
+
+    set_pose_in_sdf(pose, args.o, args.w)
 
 
 if __name__ == '__main__':
