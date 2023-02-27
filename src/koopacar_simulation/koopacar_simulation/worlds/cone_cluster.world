@@ -1,5 +1,15 @@
 <sdf version='1.7'>
   <world name='default'>
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <ros>
+        <namespace>/gazebo</namespace>
+        <argument>model_states:=model_states_demo</argument>
+        <argument>link_states:=link_states_demo</argument>
+      </ros>
+
+      <update_rate>1.0</update_rate>
+    </plugin>
+
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose>0 0 10 0 -0 0</pose>
@@ -1952,7 +1962,7 @@
       <wall_time>1675686243 71035106</wall_time>
       <iterations>220371</iterations>
       <model name='KoopaCar'>
-        <pose>6.7e-05 -5e-06 0.00853 0.00047 0.005826 7e-06</pose>
+        <pose>0.0 -2.0 0.0 0.0 0.0 3.14</pose>
         <scale>1 1 1</scale>
         <link name='base_footprint'>
           <pose>6.7e-05 -5e-06 0.00853 0.00047 0.005826 7e-06</pose>

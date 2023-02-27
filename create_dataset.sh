@@ -8,7 +8,7 @@ if ! [[ -f "$label_path" ]]; then
   return 1
 fi
 
-ttl=20
+gazebo_start_time=20
 
 num_poses=21
 num_worlds=2
@@ -21,16 +21,16 @@ launch_files=("cone_cluster.launch.py" "track01_circle.launch.py")
 # Run every simulation with every position
 for w_ind in $(seq 0 `expr $num_worlds - 1`)
 do
-  for i in $(seq 0 `expr $num_poses - 1`)
-  do
-    # Set bot pose
-    python3 change_pose_gazebo.py -f /home/ubuntu/koopacar-simulation-assets/poses.txt -i $i -o KoopaCar -w "$path_to_worlds${world_files[$w_ind]}"
+  # Launch simulation TODO: Choose sim according to world file
+  ros2 launch koopacar_simulation cone_cluster.launch.py &
 
-    if [ $? -ne 0 ];
-    then
-      echo "Error in change_pose_gazebo.py. Evaluate stack trace for more information."
-      return 1
-    fi
+  while read line; do
+    IFS=', ' read -r -a pose_array <<< "$line"
+
+    # TODO: Add correct pose (needs to be in Quaternion) change w parameter
+    ros2 service call /gazebo/set_entity_state "gazebo_msgs/SetEntityState" "{state: {name: "KoopaCar", \
+    pose: {position: {x: "${pose_array[0]}", y: "${pose_array[1]}", z: "${pose_array[2]}"}, \
+    orientation: {x: "${pose_array[3]}", y: "${pose_array[4]}", z: "${pose_array[5]}", w: "${pose_array[3]}"}}}}"
 
     # Install missing dependencies
     rosdep install -i --from-path src --rosdistro foxy -y
@@ -43,22 +43,22 @@ do
 
     source install/local_setup.bash
 
-    # Launch simulation
-    ros2 launch koopacar_simulation cone_cluster.launch.py &
-
     # Wait
-    # TODO: make sure sim is running before wait
-    sleep $ttl
+    sleep $gazebo_start_time
 
-    # Kill simulation
-    pkill ros2
-    pkill gazebo
-    pkill gzserver
-    pkill gzclient
+    # make snapshot
+    ros2 param set /lidar_collection store_once True
 
     # label new data
     python3 $label_path -pf /home/ubuntu/koopacar-simulation-assets/poses.txt -i $i -w "$path_to_worlds${world_files[$w_ind]}" -d /home/ubuntu/koopacar-system/data/lidar_perception/new_data_set
-  done
+
+  done < "/home/ubuntu/koopacar-simulation-assets/poses.txt"
+
+  # Kill simulation
+  pkill ros2
+  pkill gazebo
+  pkill gzserver
+  pkill gzclient
 done
 
 $@
