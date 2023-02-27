@@ -7,18 +7,18 @@ Author of original ROS 2 node:
   - https://automaticaddison.com
 """
 
-import os # Operating system library
-import sys # Python runtime environment library
-import rclpy # ROS Client Library for Python
+import os  # Operating system library
+import sys  # Python runtime environment library
+import rclpy  # ROS Client Library for Python
 
 # Package Management Library
-from ament_index_python.packages import get_package_share_directory 
+from ament_index_python.packages import get_package_share_directory
 
 # Gazebo's service to spawn a robot
 from gazebo_msgs.srv import SpawnEntity
 
-def main():
 
+def main():
     """ Main for spawning a robot node """
     # Get input arguments from user
     argv = sys.argv[1:]
@@ -30,7 +30,7 @@ def main():
     sdf_file_path = os.path.join(
         get_package_share_directory("koopacar_simulation"), "models",
         "koopacar", "model.sdf")
-        
+
     # Create the node
     node = rclpy.create_node("entity_spawner")
 
@@ -47,7 +47,7 @@ def main():
 
     # Show file path
     print(f"robot_sdf={sdf_file_path}")
-    
+
     # Set data for request
     request = SpawnEntity.Request()
     request.name = argv[0]
