@@ -1,15 +1,13 @@
 <sdf version='1.7'>
   <world name='default'>
-    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+    <plugin name='gazebo_ros_state' filename='libgazebo_ros_state.so'>
       <ros>
         <namespace>/gazebo</namespace>
         <argument>model_states:=model_states_demo</argument>
         <argument>link_states:=link_states_demo</argument>
       </ros>
-
       <update_rate>1.0</update_rate>
     </plugin>
-
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose>0 0 10 0 -0 0</pose>
@@ -907,174 +905,144 @@
       <pose>-0.143336 -1.16353 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>1980 136000000</sim_time>
-      <real_time>548 104562793</real_time>
-      <wall_time>1677367898 922478349</wall_time>
-      <iterations>380839</iterations>
+      <sim_time>5744 428000000</sim_time>
+      <real_time>1078 491112727</real_time>
+      <wall_time>1677518427 749678294</wall_time>
+      <iterations>740754</iterations>
       <model name='KoopaCar'>
-        <pose>0.000386 0.000798 0.008523 0.00047 0.005825 -0.00029</pose>
+        <pose>0.001226 0.000788 0.008532 0.00047 0.005825 0.000175</pose>
         <scale>1 1 1</scale>
         <link name='base_footprint'>
-          <pose>0.000386 0.000798 0.008523 0.00047 0.005825 -0.00029</pose>
-          <velocity>-1e-05 8e-06 -0.053459 0.000452 0.000596 -0</velocity>
-          <acceleration>-0.000761 1.6e-05 0.689677 3.2e-05 0.05071 2e-06</acceleration>
-          <wrench>-0.000761 1.6e-05 0.689677 0 -0 0</wrench>
+          <pose>0.001226 0.000788 0.008532 0.00047 0.005825 0.000175</pose>
+          <velocity>-3e-06 8e-06 -0.053233 0.000451 0.000725 0</velocity>
+          <acceleration>0.001136 1.8e-05 -1.14636 -9e-06 -0.0912 4e-06</acceleration>
+          <wrench>0.001136 1.8e-05 -1.14636 0 -0 0</wrench>
         </link>
         <link name='base_link'>
-          <pose>0.000386 0.000798 0.008523 0.00047 0.005825 -0.00029</pose>
-          <velocity>-1e-05 8e-06 -0.05346 0.000452 0.000595 0</velocity>
-          <acceleration>0.002791 1.4e-05 0.691248 3.2e-05 0.050707 -1e-06</acceleration>
-          <wrench>0.002304 1.1e-05 0.570788 0 -0 0</wrench>
+          <pose>0.001226 0.000788 0.008532 0.00047 0.005825 0.000175</pose>
+          <velocity>-3e-06 8e-06 -0.053233 0.000451 0.000725 0</velocity>
+          <acceleration>-0.005253 1.9e-05 -1.14924 -9e-06 -0.0912 8e-06</acceleration>
+          <wrench>-0.004338 1.5e-05 -0.948964 0 -0 0</wrench>
         </link>
         <link name='base_scan'>
-          <pose>0.000386 0.000798 0.008523 0.00047 0.005825 -0.00029</pose>
-          <velocity>-1e-05 8e-06 -0.053462 0.000452 0.000595 0</velocity>
-          <acceleration>0.007428 1e-05 0.690505 3.1e-05 0.050712 2e-06</acceleration>
-          <wrench>0.000847 1e-06 0.078718 0 -0 0</wrench>
+          <pose>0.001226 0.000788 0.008532 0.00047 0.005825 0.000175</pose>
+          <velocity>-3e-06 8e-06 -0.053233 0.000452 0.000725 0</velocity>
+          <acceleration>-0.013596 1.9e-05 -1.14807 -1.2e-05 -0.091251 4e-06</acceleration>
+          <wrench>-0.00155 2e-06 -0.13088 0 -0 0</wrench>
         </link>
         <link name='caster_back_link'>
-          <pose>-0.080636 0.000823 0.004994 1.82537 -0.791997 2.9392</pose>
-          <velocity>-7e-06 7e-06 -0.052518 -0.001345 -0.001415 0</velocity>
-          <acceleration>2e-06 -1.7e-05 0.728834 -0.00025 -0.00055 0</acceleration>
-          <wrench>0 -0 0.003644 0 -0 0</wrench>
+          <pose>-0.079796 0.000776 0.005004 2.2671 0.055615 2.76237</pose>
+          <velocity>-5e-06 9e-06 -0.053148 -0.001324 -0.001391 0</velocity>
+          <acceleration>0.001271 0.000189 -1.16022 0 -0 0</acceleration>
+          <wrench>6e-06 1e-06 -0.005801 0 -0 0</wrench>
         </link>
         <link name='imu_link'>
-          <pose>0.000386 0.000798 0.008523 0.00047 0.005825 -0.00029</pose>
-          <velocity>-1e-05 8e-06 -0.053464 0.000452 0.000595 0</velocity>
-          <acceleration>-0.000743 1.6e-05 0.68946 3.2e-05 0.050695 2e-06</acceleration>
-          <wrench>-0.000743 1.6e-05 0.68946 0 -0 0</wrench>
+          <pose>0.001226 0.000788 0.008532 0.00047 0.005825 0.000175</pose>
+          <velocity>-3e-06 8e-06 -0.053233 0.000451 0.000725 0</velocity>
+          <acceleration>0.001107 1.8e-05 -1.14632 -9e-06 -0.091194 4e-06</acceleration>
+          <wrench>0.001107 1.8e-05 -1.14632 0 -0 0</wrench>
         </link>
         <link name='wheel_left_link'>
-          <pose>9.9e-05 0.000798 0.008527 0.00047 0.01832 -0.000274</pose>
-          <velocity>6e-06 -4e-06 -0.053474 0.000445 0.000594 0</velocity>
-          <acceleration>0.001653 -0 0.689046 1.2e-05 0.050092 -6e-06</acceleration>
-          <wrench>4.7e-05 -0 0.019637 0 -0 0</wrench>
+          <pose>0.000388 0.000788 0.008552 0.000471 0.042387 0.000221</pose>
+          <velocity>7e-06 -4e-06 -0.053232 0.000445 0.000725 0</velocity>
+          <acceleration>-0.002979 0 -1.14622 -1.9e-05 -0.090265 1.5e-05</acceleration>
+          <wrench>-8.5e-05 0 -0.032666 0 -0 0</wrench>
         </link>
         <link name='wheel_right_link'>
-          <pose>7.4e-05 0.000798 0.008527 0.00047 0.019336 -0.000272</pose>
-          <velocity>6e-06 -4e-06 -0.053475 0.000445 0.000595 0</velocity>
-          <acceleration>0.001653 -0 0.689086 1.5e-05 0.050081 -4e-06</acceleration>
-          <wrench>4.7e-05 -0 0.019638 0 -0 0</wrench>
+          <pose>0.000308 0.000788 0.008556 0.000471 0.045633 0.000226</pose>
+          <velocity>7e-06 -4e-06 -0.053234 0.000445 0.000726 -0</velocity>
+          <acceleration>-0.002978 1e-06 -1.14621 -2.1e-05 -0.090247 1.2e-05</acceleration>
+          <wrench>-8.5e-05 0 -0.032666 0 -0 0</wrench>
         </link>
         <model name='camera'>
           <pose>0.021061 -0.00037 0.068321 0.001349 -0.006297 -7.8e-05</pose>
           <scale>1 1 1</scale>
           <link name='link'>
-            <pose>0.02272 0.000494 0.110721 0.00047 0.005825 -0.00029</pose>
-            <velocity>5.1e-05 -3.8e-05 -0.053474 0.000452 0.000594 0</velocity>
-            <acceleration>0.004399 1.3e-05 0.688461 3.1e-05 0.050657 3e-06</acceleration>
-            <wrench>4.4e-05 0 0.006885 0 -0 0</wrench>
+            <pose>0.02356 0.000495 0.110729 0.00047 0.005825 0.000175</pose>
+            <velocity>7.1e-05 -3.8e-05 -0.053249 0.000451 0.000725 0</velocity>
+            <acceleration>-0.008154 2e-05 -1.14431 -1e-05 -0.091208 6e-06</acceleration>
+            <wrench>-8.2e-05 0 -0.011443 0 -0 0</wrench>
           </link>
         </model>
       </model>
       <model name='blue_cone'>
-        <pose>0.536974 -1.4046 -0 -1e-06 -2e-06 0</pose>
+        <pose>0.603906 -0.80104 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>0.536974 -1.4046 -0 -1e-06 -2e-06 0</pose>
+          <pose>0.603906 -0.80104 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='blue_cone_0'>
-        <pose>2.87339 0.058434 -0 2e-06 -0 0</pose>
+        <pose>0.317759 1.20984 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>2.87339 0.058434 -0 2e-06 -0 0</pose>
+          <pose>0.317759 1.20984 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.1e-05 -9e-06 3.29692 1.32498 -1.26618 4e-05</acceleration>
-          <wrench>1.1e-05 -9e-06 3.29692 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='blue_cone_1'>
-        <pose>0.232381 1.0686 -0 -1e-06 -2e-06 0</pose>
+        <pose>-0.07877 -2.59212 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>0.232381 1.0686 -0 -1e-06 -2e-06 0</pose>
+          <pose>-0.07877 -2.59212 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='blue_cone_2'>
-        <pose>-1.26328 0.538141 -0 2e-06 -0 0</pose>
+        <pose>-1.76045 1.62936 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-1.26328 0.538141 -0 2e-06 -0 0</pose>
+          <pose>-1.76045 1.62936 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.1e-05 -9e-06 3.29699 1.32505 -1.26601 4e-05</acceleration>
-          <wrench>1.1e-05 -9e-06 3.29699 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='blue_cone_3'>
-        <pose>-0.432774 -1.32334 -0 -1e-06 -2e-06 0</pose>
+        <pose>2.63999 -0.062103 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-0.432774 -1.32334 -0 -1e-06 -2e-06 0</pose>
+          <pose>2.63999 -0.062103 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='blue_cone_4'>
-        <pose>-1.5021 -2.4284 -0 3e-06 1e-06 -0</pose>
+        <pose>-1.71182 -3.07364 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-1.5021 -2.4284 -0 3e-06 1e-06 -0</pose>
+          <pose>-1.71182 -3.07364 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.372934 0.896545 1.07689 2.1e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.372934 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='blue_cone_5'>
-        <pose>1.85106 -3.97398 -0 -1e-06 -2e-06 0</pose>
+        <pose>-2.99021 3.05992 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>1.85106 -3.97398 -0 -1e-06 -2e-06 0</pose>
+          <pose>-2.99021 3.05992 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='blue_cone_6'>
-        <pose>3.47546 -2.46972 -0 3e-06 1e-06 -0</pose>
+        <pose>3.60738 1.71898 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>3.47546 -2.46972 -0 3e-06 1e-06 -0</pose>
+          <pose>3.60738 1.71898 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.372934 0.896545 1.07689 2.1e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.372934 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='blue_cone_7'>
-        <pose>-4.23996 1.08338 -0 -1e-06 -2e-06 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose>-4.23996 1.08338 -0 -1e-06 -2e-06 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='blue_cone_8'>
-        <pose>-1.89473 4.00246 -0 3e-06 1e-06 -0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose>-1.89473 4.00246 -0 3e-06 1e-06 -0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.372934 0.896545 1.07689 2.1e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.372934 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='blue_cone_9'>
-        <pose>4.33353 1.63959 -0 -1e-06 -2e-06 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose>4.33353 1.63959 -0 -1e-06 -2e-06 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -1088,193 +1056,163 @@
         </link>
       </model>
       <model name='orange_cone'>
-        <pose>2.30083 -1.98047 -0 2e-06 -0 0</pose>
+        <pose>-1.0962 -0.513015 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>2.30083 -1.98047 -0 2e-06 -0 0</pose>
+          <pose>-1.0962 -0.513015 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.1e-05 -9e-06 3.29688 1.32494 -1.26628 4e-05</acceleration>
-          <wrench>1.1e-05 -9e-06 3.29688 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_cone_0'>
-        <pose>1.20084 0.485111 -0 -1e-06 -2e-06 0</pose>
+        <pose>0.945475 0.341864 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>1.20084 0.485111 -0 -1e-06 -2e-06 0</pose>
+          <pose>0.945475 0.341864 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_cone_1'>
-        <pose>0.207294 2.40255 -0 2e-06 -0 0</pose>
+        <pose>-1.84265 -1.84364 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>0.207294 2.40255 -0 2e-06 -0 0</pose>
+          <pose>-1.84265 -1.84364 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.1e-05 -9e-06 3.29682 1.32487 -1.26644 4e-05</acceleration>
-          <wrench>1.1e-05 -9e-06 3.29682 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_cone_2'>
-        <pose>-2.84009 0.091398 -0 -1e-06 -2e-06 0</pose>
+        <pose>0.221405 2.4 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-2.84009 0.091398 -0 -1e-06 -2e-06 0</pose>
+          <pose>0.221405 2.4 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_cone_3'>
-        <pose>-2.06175 -1.63263 -0 2e-06 -0 0</pose>
+        <pose>3.23182 -2.80866 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-2.06175 -1.63263 -0 2e-06 -0 0</pose>
+          <pose>3.23182 -2.80866 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.1e-05 -9e-06 3.29682 1.32487 -1.26644 4e-05</acceleration>
-          <wrench>1.1e-05 -9e-06 3.29682 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_cone_4'>
-        <pose>-1.30787 -0.448133 -0 -1e-06 -2e-06 0</pose>
+        <pose>-4.03949 -1.09332 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-1.30787 -0.448133 -0 -1e-06 -2e-06 0</pose>
+          <pose>-4.03949 -1.09332 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_cone_5'>
-        <pose>4.48474 -0.440846 -0 3e-06 1e-06 -0</pose>
+        <pose>-0.881807 3.56949 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>4.48474 -0.440846 -0 3e-06 1e-06 -0</pose>
+          <pose>-0.881807 3.56949 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.372934 0.896545 1.07689 2.1e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.372934 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_cone_6'>
-        <pose>-0.052079 -4.04995 -0 -1e-06 -2e-06 0</pose>
+        <pose>4.65487 -0.02192 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-0.052079 -4.04995 -0 -1e-06 -2e-06 0</pose>
+          <pose>4.65487 -0.02192 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='orange_cone_7'>
-        <pose>-4.05356 -0.807675 -0 3e-06 1e-06 -0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose>-4.05356 -0.807675 -0 3e-06 1e-06 -0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.372934 0.896545 1.07689 2.1e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.372934 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='orange_cone_8'>
-        <pose>0.447689 3.9305 -0 -1e-06 -2e-06 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose>0.447689 3.9305 -0 -1e-06 -2e-06 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone'>
-        <pose>0.932662 -0.390844 -0 -1e-06 -2e-06 0</pose>
+        <pose>-0.747323 0.555789 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>0.932662 -0.390844 -0 -1e-06 -2e-06 0</pose>
+          <pose>-0.747323 0.555789 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone_0'>
-        <pose>1.97932 1.51537 -0 2e-06 -0 0</pose>
+        <pose>1.39428 -1.86823 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>1.97932 1.51537 -0 2e-06 -0 0</pose>
+          <pose>1.39428 -1.86823 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.1e-05 -9e-06 3.29694 1.325 -1.26612 4e-05</acceleration>
-          <wrench>1.1e-05 -9e-06 3.29694 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone_1'>
-        <pose>-1.25996 2.42216 -0 -1e-06 -2e-06 0</pose>
+        <pose>-2.69362 -0.08166 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-1.25996 2.42216 -0 -1e-06 -2e-06 0</pose>
+          <pose>-2.69362 -0.08166 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone_2'>
-        <pose>2.72315 -0.967098 -0 3e-06 1e-06 -0</pose>
+        <pose>1.97705 1.30272 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>2.72315 -0.967098 -0 3e-06 1e-06 -0</pose>
+          <pose>1.97705 1.30272 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.372934 0.896545 1.07689 2.1e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.372934 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone_3'>
-        <pose>-0.29767 -2.83636 -0 -1e-06 -2e-06 0</pose>
+        <pose>1.08621 -3.74546 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-0.29767 -2.83636 -0 -1e-06 -2e-06 0</pose>
+          <pose>1.08621 -3.74546 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone_4'>
-        <pose>-1.66088 -3.73073 -0 -1e-06 -2e-06 0</pose>
+        <pose>-3.62362 1.35776 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-1.66088 -3.73073 -0 -1e-06 -2e-06 0</pose>
+          <pose>-3.62362 1.35776 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone_5'>
-        <pose>-3.35753 -2.45518 -0 3e-06 1e-06 -0</pose>
+        <pose>1.86862 3.17181 -0 3e-06 1e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-3.35753 -2.45518 -0 3e-06 1e-06 -0</pose>
+          <pose>1.86862 3.17181 -0 3e-06 1e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.372934 0.896545 1.07689 2.1e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.372934 0 -0 0</wrench>
+          <acceleration>1e-06 -2e-06 -0.420228 -2.2579 -0.89501 -3.14158</acceleration>
+          <wrench>1e-06 -2e-06 -0.420228 0 -0 0</wrench>
         </link>
       </model>
       <model name='yellow_cone_6'>
-        <pose>-3.28135 2.90382 -0 -1e-06 -2e-06 0</pose>
+        <pose>4.5237 -1.61973 -1e-06 4e-06 1e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-3.28135 2.90382 -0 -1e-06 -2e-06 0</pose>
+          <pose>4.5237 -1.61973 -1e-06 4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2e-06 3e-06 0.380405 -2.50555 0.740714 -2.2e-05</acceleration>
-          <wrench>-2e-06 3e-06 0.380405 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='yellow_cone_7'>
-        <pose>3.11997 3.14598 -0 3e-06 1e-06 -0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose>3.11997 3.14598 -0 3e-06 1e-06 -0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -2e-06 0.388631 0.881658 1.21878 2.2e-05</acceleration>
-          <wrench>2e-06 -2e-06 0.388631 0 -0 0</wrench>
+          <acceleration>1e-06 -1e-06 -0.309504 -2.26016 -1.37931 -3.14158</acceleration>
+          <wrench>1e-06 -1e-06 -0.309504 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
@@ -1283,7 +1221,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-0.929767 0.123739 15.1427 9e-06 1.5658 -1.83979</pose>
+        <pose>-0.943715 -0.353407 17.119 1.1e-05 1.5658 -1.83979</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1391,7 +1329,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.536974 -1.4046 0 0 -0 0</pose>
+      <pose>0.603906 -0.80104 0 0 -0 0</pose>
     </model>
     <model name='orange_cone'>
       <link name='link_0'>
@@ -1496,7 +1434,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>2.30083 -1.98047 0 0 -0 0</pose>
+      <pose>-1.0962 -0.513015 0 0 -0 0</pose>
     </model>
     <model name='yellow_cone'>
       <link name='link_0'>
@@ -1601,7 +1539,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.932662 -0.390844 0 0 -0 0</pose>
+      <pose>-0.747323 0.555789 0 0 -0 0</pose>
     </model>
     <model name='blue_cone_0'>
       <link name='link_0'>
@@ -1706,7 +1644,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>2.87339 0.058434 0 0 -0 0</pose>
+      <pose>0.317759 1.20984 0 0 -0 0</pose>
     </model>
     <model name='orange_cone_0'>
       <link name='link_0'>
@@ -1811,7 +1749,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>1.20084 0.485111 0 0 -0 0</pose>
+      <pose>0.945475 0.341864 0 0 -0 0</pose>
     </model>
     <model name='yellow_cone_0'>
       <link name='link_0'>
@@ -1916,7 +1854,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>1.97932 1.51537 0 0 -0 0</pose>
+      <pose>1.39428 -1.86823 0 0 -0 0</pose>
     </model>
     <model name='blue_cone_1'>
       <link name='link_0'>
@@ -2021,7 +1959,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.232381 1.0686 0 0 -0 0</pose>
+      <pose>-0.07877 -2.59212 0 0 -0 0</pose>
     </model>
     <model name='orange_cone_1'>
       <link name='link_0'>
@@ -2126,7 +2064,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.207294 2.40255 0 0 -0 0</pose>
+      <pose>-1.84265 -1.84364 0 0 -0 0</pose>
     </model>
     <model name='yellow_cone_1'>
       <link name='link_0'>
@@ -2231,7 +2169,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-1.25996 2.42216 0 0 -0 0</pose>
+      <pose>-2.69362 -0.08166 0 0 -0 0</pose>
     </model>
     <model name='blue_cone_2'>
       <link name='link_0'>
@@ -2336,7 +2274,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-1.26328 0.538141 0 0 -0 0</pose>
+      <pose>-1.76045 1.62936 0 0 -0 0</pose>
     </model>
     <model name='orange_cone_2'>
       <link name='link_0'>
@@ -2441,322 +2379,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-2.84009 0.091398 0 0 -0 0</pose>
-    </model>
-    <model name='blue_cone_3'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.07 0.22 0.89 1</ambient>
-            <diffuse>0.07 0.22 0.89 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>-0.432774 -1.32334 0 0 -0 0</pose>
-    </model>
-    <model name='orange_cone_3'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.89 0.48 0.07 1</ambient>
-            <diffuse>0.89 0.48 0.07 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>-2.06175 -1.63263 0 0 -0 0</pose>
-    </model>
-    <model name='yellow_cone_3'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.79 0.69 0.12 1</ambient>
-            <diffuse>0.89 0.48 0.07 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>-0.29767 -2.83636 0 0 -0 0</pose>
+      <pose>0.221405 2.4 0 0 -0 0</pose>
     </model>
     <model name='yellow_cone_2'>
       <link name='link_0'>
@@ -2861,9 +2484,114 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>2.72315 -0.967098 0 0 -0 0</pose>
+      <pose>1.97705 1.30272 0 0 -0 0</pose>
     </model>
-    <model name='orange_cone_4'>
+    <model name='blue_cone_3'>
+      <link name='link_0'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>-0 0 0 0 -0 0</pose>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0.25 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://cone_meshes/cone_mesh.dae</uri>
+              <scale>0.25 0.25 0.25</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.07 0.22 0.89 1</ambient>
+            <diffuse>0.07 0.22 0.89 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0.25 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://cone_meshes/cone_mesh.dae</uri>
+              <scale>0.25 0.25 0.25</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>2.63999 -0.062103 0 0 -0 0</pose>
+    </model>
+    <model name='orange_cone_3'>
       <link name='link_0'>
         <inertial>
           <mass>1</mass>
@@ -2966,7 +2694,112 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-1.30787 -0.448133 0 0 -0 0</pose>
+      <pose>3.23182 -2.80866 0 0 -0 0</pose>
+    </model>
+    <model name='yellow_cone_3'>
+      <link name='link_0'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>-0 0 0 0 -0 0</pose>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0.25 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://cone_meshes/cone_mesh.dae</uri>
+              <scale>0.25 0.25 0.25</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Yellow</name>
+            </script>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.79 0.69 0.12 1</ambient>
+            <diffuse>0.89 0.48 0.07 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0.25 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://cone_meshes/cone_mesh.dae</uri>
+              <scale>0.25 0.25 0.25</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>1.08621 -3.74546 0 0 -0 0</pose>
     </model>
     <model name='blue_cone_4'>
       <link name='link_0'>
@@ -3071,114 +2904,9 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-1.5021 -2.4284 0 0 -0 0</pose>
+      <pose>-1.71182 -3.07364 0 0 -0 0</pose>
     </model>
-    <model name='blue_cone_5'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.07 0.22 0.89 1</ambient>
-            <diffuse>0.07 0.22 0.89 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>1.85106 -3.97398 0 0 -0 0</pose>
-    </model>
-    <model name='orange_cone_5'>
+    <model name='orange_cone_4'>
       <link name='link_0'>
         <inertial>
           <mass>1</mass>
@@ -3281,7 +3009,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>4.48474 -0.440846 0 0 -0 0</pose>
+      <pose>-4.03949 -1.09332 0 0 -0 0</pose>
     </model>
     <model name='yellow_cone_4'>
       <link name='link_0'>
@@ -3386,9 +3114,9 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-1.66088 -3.73073 0 0 -0 0</pose>
+      <pose>-3.62362 1.35776 0 0 -0 0</pose>
     </model>
-    <model name='blue_cone_6'>
+    <model name='blue_cone_5'>
       <link name='link_0'>
         <inertial>
           <mass>1</mass>
@@ -3491,9 +3219,9 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>3.47546 -2.46972 0 0 -0 0</pose>
+      <pose>-2.99021 3.05992 0 0 -0 0</pose>
     </model>
-    <model name='orange_cone_6'>
+    <model name='orange_cone_5'>
       <link name='link_0'>
         <inertial>
           <mass>1</mass>
@@ -3596,7 +3324,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-0.052079 -4.04995 0 0 -0 0</pose>
+      <pose>-0.881807 3.56949 0 0 -0 0</pose>
     </model>
     <model name='yellow_cone_5'>
       <link name='link_0'>
@@ -3701,9 +3429,9 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-3.35753 -2.45518 0 0 -0 0</pose>
+      <pose>1.86862 3.17181 0 0 -0 0</pose>
     </model>
-    <model name='blue_cone_7'>
+    <model name='blue_cone_6'>
       <link name='link_0'>
         <inertial>
           <mass>1</mass>
@@ -3806,9 +3534,9 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-4.23996 1.08338 0 0 -0 0</pose>
+      <pose>3.60738 1.71898 0 0 -0 0</pose>
     </model>
-    <model name='orange_cone_7'>
+    <model name='orange_cone_6'>
       <link name='link_0'>
         <inertial>
           <mass>1</mass>
@@ -3911,7 +3639,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-4.05356 -0.807675 0 0 -0 0</pose>
+      <pose>4.65487 -0.02192 0 0 -0 0</pose>
     </model>
     <model name='yellow_cone_6'>
       <link name='link_0'>
@@ -4016,427 +3744,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-3.28135 2.90382 0 0 -0 0</pose>
-    </model>
-    <model name='blue_cone_8'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.07 0.22 0.89 1</ambient>
-            <diffuse>0.07 0.22 0.89 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>-1.89473 4.00246 0 0 -0 0</pose>
-    </model>
-    <model name='orange_cone_8'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.89 0.48 0.07 1</ambient>
-            <diffuse>0.89 0.48 0.07 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.447689 3.9305 0 0 -0 0</pose>
-    </model>
-    <model name='yellow_cone_7'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.79 0.69 0.12 1</ambient>
-            <diffuse>0.89 0.48 0.07 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>3.11997 3.14598 0 0 -0 0</pose>
-    </model>
-    <model name='blue_cone_9'>
-      <link name='link_0'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Yellow</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.07 0.22 0.89 1</ambient>
-            <diffuse>0.07 0.22 0.89 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0.25 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cone_meshes/cone_mesh.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>4.33353 1.63959 0 0 -0 0</pose>
+      <pose>4.5237 -1.61973 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
