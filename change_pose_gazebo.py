@@ -55,9 +55,9 @@ def main():
     parser.add_argument('-p', '-pose', nargs='+', type=float, help="Set of 6 numbers specifying a models pose in the "
                                                                    "gazebo simulation.", required=False)
     parser.add_argument('-o', '-object_name', type=str, help="Name of the object, whose position is being set in the "
-                                                             "script.", required=False)
+                                                             "script.", required=True)
     parser.add_argument('-w', '-world', type=str, help="File path specifying the location of the world file (sdf) "
-                                                       "describing the simulation.", required=False)
+                                                       "describing the simulation.", required=True)
     parser.add_argument('-f', '-file', type=str, help="File containing a set of possible bot poses.", required=False)
     parser.add_argument('-i', '-index', type=int, help="Index referencing a pose from the specified file.",
                         required=False)
@@ -66,14 +66,6 @@ def main():
 
     if args.p and args.f and args.i:
         print("Please use only one of the options. Specify a pose (-p) OR a file and index (-f, -i).")
-        return -1
-
-    if not args.o:
-        print("Specify the objects name with -o.")
-        return -1
-
-    if not args.w:
-        print("Specify the world file matching the simulation with -w.")
         return -1
 
     if args.f is not None and args.i is not None:
