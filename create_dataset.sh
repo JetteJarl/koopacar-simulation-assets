@@ -1,14 +1,19 @@
 #!/bin/bash
 source ~/.bashrc
 
-#TODO: get path to label func as input
-
 # Define variables
+label_path=$1
+if ! [[ -f "$label_path" ]]; then
+  echo "$label_path is not a file."
+  return 1
+fi
+
 ttl=20
 
 num_poses=21
 num_worlds=2
 
+# TODO: Add more files
 path_to_worlds="/home/ubuntu/koopacar-simulation-assets/src/koopacar_simulation/koopacar_simulation/worlds/"
 world_files=("cone_cluster.world" "track01_circle.world")
 launch_files=("cone_cluster.launch.py" "track01_circle.launch.py")
@@ -24,7 +29,7 @@ do
     if [ $? -ne 0 ];
     then
       echo "Error in change_pose_gazebo.py. Evaluate stack trace for more information."
-      exit 1
+      return 1
     fi
 
     # Install missing dependencies
@@ -42,6 +47,7 @@ do
     ros2 launch koopacar_simulation cone_cluster.launch.py &
 
     # Wait
+    # TODO: make sure sim is running before wait
     sleep $ttl
 
     # Kill simulation
@@ -50,7 +56,8 @@ do
     pkill gzserver
     pkill gzclient
 
-    # TODO: Call labeling
+    # label new data
+    python3 $label_path -pf /home/ubuntu/koopacar-simulation-assets/poses.txt -i $i -w "$path_to_worlds${world_files[$w_ind]}" -d /home/ubuntu/koopacar-system/data/lidar_perception/new_data_set
   done
 done
 
