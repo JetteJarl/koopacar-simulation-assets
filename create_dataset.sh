@@ -9,9 +9,7 @@ control_c() {
   pkill gzserver
   pkill gzclient
 
-  echo "Keyboard interrupt. All processes are killed."
-
-  return
+  return 1
 }
 
 trap control_c SIGINT
@@ -20,19 +18,17 @@ trap control_c SIGINT
 # Define variables
 label_path=$1
 if ! [[ -f "$label_path" ]]; then
-  echo "$label_path is not a file."
+  echo "$label_path is not a file. Need "
   return 1
 fi
 
-gazebo_start_time=12
+gazebo_start_time=30
 
-num_poses=21
 num_worlds=2
 
-# TODO: Add more files
 path_to_worlds="/home/ubuntu/koopacar-simulation-assets/src/koopacar_simulation/koopacar_simulation/worlds/"
-world_files=("cone_cluster.world" "track01_circle.world")
-launch_files=("cone_cluster.launch.py" "track01_circle.launch.py")
+world_files=("cone_circles.world" "cones_cubes.world")
+launch_files=("cone_circles.launch.py" "cones_cubes.launch.py")
 
 # Install missing dependencies
 rosdep install -i --from-path src --rosdistro foxy -y
@@ -61,13 +57,19 @@ do
     pose: {position: {x: "${pose_array[0]}", y: "${pose_array[1]}", z: "${pose_array[2]}"}, \
     orientation: {x: "${pose_array[3]}", y: "${pose_array[4]}", z: "${pose_array[5]}", w: "${pose_array[6]}"}}}}"
 
+    sleep 3
+
     # make snapshot
     ros2 param set /lidar_collection store_once True
 
     # label new data
     python3 $label_path -p $line -w "$path_to_worlds${world_files[$w_ind]}" -d /home/ubuntu/koopacar-system/data/lidar_perception/new_data_set
 
+    sleep 3
+
   done < "/home/ubuntu/koopacar-simulation-assets/poses_quaternions.txt"
+
+  sleep 30
 
   # Kill simulation
   pkill ros2
