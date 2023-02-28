@@ -29,7 +29,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='True')
-    world_file_name = 'cones_circles.world'
+    world_file_name = 'cone_circles.world'
     pkg_dir = get_package_share_directory('koopacar_simulation')
 
     os.environ["GAZEBO_MODEL_PATH"] = os.path.join(pkg_dir, 'models')
