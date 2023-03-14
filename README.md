@@ -31,6 +31,14 @@ $ ros2 launch koopacar_simulation cone_cluster.launch.py
 3. Create a new launch file *.launch.py and add the new world file (use existing file as example)
 4. Build and run the simulation
 
+## How to create replays
+
+1. Run a simulation by following the steps above
+2. Press Ctrl+D or click the icon in the top right to open the Data Logger
+3. Save any log by clicking on the red button
+4. Close Gazebo
+5. Add the KoopaCar/cone models from `src/koopacar_simulation/koopacar_simulation/models` to `/home/<username>/.gazebo/models`
+6. Replay the log with `gazebo -p <path_to_log_file>`
 
 ## Related
 
@@ -39,3 +47,5 @@ Some code passages were copied from this Tutorial.
 
 The model for the KoopaCar ist build on the Turtlebot3 Burger model from ROBOTIS (https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git).
 The meshes for the core model are taken from this repository.
+
+An overview over Logging and playback in Gazebo can be found [here](https://classic.gazebosim.org/tutorials?cat=tools_utilities&tut=logging_playback)
